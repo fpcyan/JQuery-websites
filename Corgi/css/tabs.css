@@ -1,4 +1,4 @@
-html, head, meta, title, body, ul, li, a, section, article, p {
+html, head, meta, title, body, ul, li, a, section, article, p, h1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -17,6 +17,7 @@ ul {
 
 body {
   font-family: sans-serif;
+  background: lightgray;
 }
 
 .group:after {
@@ -25,8 +26,42 @@ body {
   clear: both;
 }
 
-a.active {
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 60px;
   font-weight: bold;
+  margin: 20px;
+}
+
+.tabs {
+  display: block;
+  width: 500px;
+  margin: auto;
+}
+
+.tabs a {
+  display: block;
+  margin: auto;
+  float: left;
+  font-size: 16px;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.content-tabs {
+  display: block;
+  margin: auto;
+  width: 500px;
+  font-size: 16px;
+}
+
+a.active {
+
+  background: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .content-tabs article {
@@ -35,4 +70,7 @@ a.active {
 
 .content-tabs .active {
   display: block;
+  background: white;
+  padding: 20px;
+
 }
