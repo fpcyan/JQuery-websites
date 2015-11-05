@@ -1,0 +1,38 @@
+html, head, meta, title, body, ul, li, a, section, article, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  vertical-align: inherit;
+
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+.content-tabs article {
+  display: none;
+}
+
+.content-tabs .active {
+  display: block;
+}
