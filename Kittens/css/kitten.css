@@ -1,0 +1,113 @@
+html, head, meta, title, body, ul, li, a, section, article, p, figure, img, h1, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  vertical-align: inherit;
+
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  background: white;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 15px;
+}
+
+.carousel {
+  position: absolute;
+  display: block;
+  width: 560px;
+  height: 315px;
+  left: calc(50% - 280px);
+  top: 100px;
+  border: 15px solid black;
+}
+
+.carousel button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  color: blue;
+  border-radius: 100%;
+  border: 4px dotted black;
+  background: white;
+}
+
+.carousel button:hover {
+  border-radius: 100%;
+  border: 4px dotted blue;
+}
+.carousel .slide-left {
+  position: absolute;
+  top: 148px;
+  left: -70px;
+
+  /*calc(-100% - 20px);*/
+}
+
+.carousel .slide-right {
+  position: absolute;
+  top: 148px;
+  right: -70px;
+  transform: scale(-1, 1)
+
+  /*calc(100% + 20px);*/
+
+}
+
+.items {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.items li {
+  display: none;
+}
+
+.items li.active {
+  display: block;
+  position: absolute;
+  left: 0%;
+  transition: left .5s linear;
+}
+
+.items li.left {
+  left: -100%;
+}
+
+.items li.right {
+  left: 100%;
+}
+
+.items li img {
+  display: block;
+  width: 560px;
+  height: auto;
+}

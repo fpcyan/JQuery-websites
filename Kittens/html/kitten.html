@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kitten Carousel</title>
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../js/kitten.js"></script>
+    <link href="../css/kitten.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <script>
+
+    $(document).on("ready", function(el) {
+
+    });
+
+    $(function(){
+      $(".carousel").carousel();
+    });
+
+  </script>
+
+
+  <body>
+
+    <h1>Carousel</h1>
+    <figure class="carousel">
+      <ul class="items group">
+        <li><img src="../cat1.jpeg"></li>
+        <li><img src="../cat5.jpeg"></li>
+        <li><img src="../cat8.jpeg"></li>
+        <li><img src="../cat12.jpeg"></li>
+        <li><img src="../cat14.jpeg"></li>
+        <li><img src="../cat15.jpeg"></li>
+      </ul>
+
+      <button class="slide-left">&#128031;</button>
+      <button class="slide-right">&#128031;</button>
+    </figure>
+  </body>
+</html>
